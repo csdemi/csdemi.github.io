@@ -8,13 +8,18 @@ h1{
 }
 h2,h3{
 	font-family: 'Quicksand', sans-serif;
+	margin: 0;
+	text-align: center;
+	border-bottom: solid;
 	color: #0E216C ;
+	
 }
 /*Body Text*/
 p{
 	font-family: 'Ubuntu',sans-serif;
 	color: #C0260A;
 	letter-spacing: 2px;
+	text-indent: 12px;
 }
 /*Baseline Links*/
 a:link,
@@ -24,10 +29,11 @@ a:visited{
 	font-style: italic;
 
 }
-
 a:hover{
 	background: #FF5952;
 }
+
+/*NAVIGATION*/
 ul {
   list-style:none;
   padding-left: 32px;
@@ -50,21 +56,23 @@ nav a{
   padding: 20px;
   color: #93AAFF;
 }
-
-nav a.selected, nav a:hover{
+nav a.selected, 
+nav a:hover,
+nav a:visited{
+	padding-bottom: 0;
 	color:#0E216C;
 }
-nav a:visited{
-	color: #0E216C;
-}
-/* Set Your Own Margin & Padding */
-h2, h3, p {
-	margin: 0;
-}
-
 /* Layout for Style Tile*/
 section {
 	margin: 20px 0;
+}
+footer{
+	text-align: center;
+	border-top: 2px solid #0A0924;
+}
+img{
+	max-width: 100%;
+	border: 3px solid #FF5952;
 }
 /* Show Grid */
 .showgrid {
