@@ -22,10 +22,40 @@ a:visited{
 	text-transform: uppercase;
 	text-decoration: none;
 	font-style: italic;
+
 }
 
 a:hover{
 	background: #FF5952;
+}
+ul {
+  list-style:none;
+  padding-left: 32px;
+  margin: 0;
+}
+nav{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1.25em;
+	font-style: bold;
+	background: #C0260A;
+	color: transparent;
+}
+nav li{
+	display: inline-block;
+}
+
+nav a{
+  text-decoration: none;
+  font-weight: 800;
+  padding: 20px;
+  color: #93AAFF;
+}
+
+nav a.selected, nav a:hover{
+	color:#0E216C;
+}
+nav a:visited{
+	color: #0E216C;
 }
 /* Set Your Own Margin & Padding */
 h2, h3, p {
@@ -40,3 +70,7 @@ section {
 .showgrid {
 	background: url("../img/grid-bg.png") repeat-y;
 }
+/* Media types go here*/
+/*a.selected, a:hover{
+	color: #0A0924;
+}*/
