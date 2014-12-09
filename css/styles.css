@@ -5,6 +5,7 @@ body{
 h1{
 	font-family: 'Nova Square', cursive;
 	color:#0A0924;
+	text-align: center;
 }
 h2,h3{
 	font-family: 'Quicksand', sans-serif;
@@ -12,6 +13,8 @@ h2,h3{
 	text-align: center;
 	border-bottom: solid;
 	color: #0E216C ;
+	font-size: 1.25em;
+	max-width: 100%;
 	
 }
 /*Body Text*/
@@ -32,22 +35,46 @@ a:visited{
 a:hover{
 	background: #FF5952;
 }
-
+div a:hover{
+	background: none;
+}
 /*NAVIGATION*/
 ul {
   list-style:none;
   padding-left: 32px;
   margin: 0;
+  color: #C0260A;
 }
-nav{
-	font-family: 'Ubuntu', sans-serif;
-	font-size: 1.25em;
-	font-style: bold;
-	background: #C0260A;
-	color: transparent;
+nav ul {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+  background:#C0260A;
+  height: 1.7em;
+  list-style: none;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  font-size: 1.25em;
+  font-style: bold;
+  color: transparent;
 }
-nav li{
-	display: inline-block;
+nav a:link, nav a:visited {
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+}
+nav a:hover {
+  color: black;
+  background: white;
+  font-weight: bold;
+  border-bottom: 1px solid white;
+}
+nav li {
+  display: inline;
+  float: left;
+  padding: .625em 0;
 }
 
 nav a{
@@ -66,13 +93,111 @@ nav a:visited{
 section {
 	margin: 20px 0;
 }
+header{
+	background: url("../img/circuit2.png");
+	background-color: transparent;
+}
 footer{
 	text-align: center;
 	border-top: 2px solid #0A0924;
 }
-img{
-	max-width: 100%;
+img {
+  max-width: 100%;
+ }
+header > section >h1,header>section>p{
+	color:white;
+}
+section > img{
 	border: 3px solid #FF5952;
+	background: none;
+}
+ .gallery .control-button {
+    color: #C0260A;
+    color: rgba(255, 255, 255, 0.4);
+  }
+  
+  .gallery .control-button:hover {
+    color: white;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  /*
+    Theme controls how everything looks in Gallery CSS.
+  */ 
+  .gallery {
+    position: relative;
+  }
+  .gallery .item {
+    height: 600px;
+    overflow: hidden;
+    text-align: center;
+    border-bottom: 4px double rgb(192,38,10);
+    border-top: 4px double rgb(192,38,10);
+
+  }
+  
+  .gallery .controls {
+    position: absolute;
+    bottom: -100px;
+    width: 100%;
+    text-align: center;
+  
+  }
+  .gallery .controls img {
+    border: 3px solid rgb(147,170,255);
+    border-radius: 75px;
+    width: 50px;
+    margin: 0 10px;
+  }
+  .gallery .control-button {
+    display: inline-block;
+    margin: 0 .02em;
+    font-size: 3em;
+    text-align: center;
+    text-decoration: none;
+    transition: color .1s;
+  }
+#logo {
+  -webkit-animation:pulse 1s infinite ease-in-out alternate;
+  -o-animation:pulse 1s infinite ease-in-out alternate;
+  animation: pulse 1s infinite ease-in-out alternate;
+  border: none;
+}
+@-webkit-keyframes pulse {
+  from { transform: scale(0.8); }
+  to { transform: scale(1.2); }
+}
+#alb > p:nth-child(2),#eagles > p:nth-child(2),#warriors > p:nth-child(2){
+	font-weight: 700;
+}
+#personal > ul,#knowlege >ul,#proficient > ul{
+	text-align: left;
+}
+#personal > ul >li,#proficient > ul>li,#knowlege >ul>li{
+	list-style: none;
+}
+#alb > ul,#eagles > ul, #warriors > ul{
+	list-style-type: disc; 
+}
+#mail{
+	text-align: left;
+	width: 211px;
+	padding-left: 34px;
+}
+#phone{
+	text-align: right;
+	width: 413px;
+	padding-right: 20px;
+}
+#phone,#mail{
+	font-size: 1.19em;
+}
+
+#ewu, #sms, #personal, #alb {
+	padding-left: 10px;
+}
+#pattern, #knowledge,#wwcc{
+	padding-right: 15px;
 }
 /* Show Grid */
 .showgrid {
