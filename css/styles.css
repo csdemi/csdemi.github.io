@@ -234,7 +234,13 @@ h1,h2,h3{
     width: 100%;
     margin: 2% 0;
   }
-
+body > div > section.grid_2{
+  font-size: .9em;
+  width: 100%;
+}
+body > div > section:nth-child(n+7){
+  width: 49%;
+}
 }
 
 /* Mobile */
