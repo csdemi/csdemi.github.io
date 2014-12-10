@@ -106,6 +106,7 @@ img {
  }
 header > section >h1,header>section>p{
 	color:white;
+  text-indent: none;
 }
 section > img{
 	border: 3px solid #FF5952;
@@ -204,6 +205,79 @@ section > img{
 	background: url("../img/grid-bg.png") repeat-y;
 }
 /* Media types go here*/
-/*a.selected, a:hover{
-	color: #0A0924;
-}*/
+/* Tablet */
+@media screen and (max-width: 768px) {
+  
+nav ul {
+    padding: 0;
+    margin: 0;
+    height: 1em;
+  }
+h1,h2,h3{
+  font-size: 1.25em;
+}
+
+ #phone,#mail {
+  margin: 0;
+  padding: 0;
+  font-size: .9em;
+  max-width: 100%;
+  text-align: center;
+  }
+
+  nav>ul>li {
+    float: none;
+    font-size: .5em;
+    padding-top: none; 
+  }
+  footer p.grid_6 {
+    width: 100%;
+    margin: 2% 0;
+  }
+
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  nav ul {
+    padding: 0;
+    margin: 0;
+    height: 1em;
+  }
+  
+  nav.grid_9 {
+    width: 100%;
+  }
+  #phone,#mail {
+  margin: 0;
+  padding: 0;
+  font-size: .65em;
+  max-width: 50%;
+  text-align: center;
+  } 
+    nav>ul>li {
+    float: none;
+    font-size: .4em;
+    padding-top: none; 
+  }
+  h2,h3{
+    font-size: 1em;
+  }
+  p{
+    font-size: .9em;
+  }
+  #main section>section.grid_6,
+  #main >section:nth-child(n+1)>section.grid_4, 
+  body > div > section.grid_3,
+  body > div > section.grid_9,
+  body > div > section:nth-child(n+1),
+  body > div > section.grid_2{
+    width: 100%;
+    float: none;
+  }
+    footer p.grid_6 {
+    width: 100%;
+    margin: 2% 0;
+  }
+
+}
