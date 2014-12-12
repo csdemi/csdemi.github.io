@@ -227,7 +227,7 @@ h1,h2,h3{
 
   nav>ul>li {
     float: none;
-    font-size: .5em;
+    font-size: .9em;
     padding-top: none; 
   }
   footer p.grid_6 {
@@ -263,7 +263,7 @@ body > div > section:nth-child(n+7){
   } 
     nav>ul>li {
     float: none;
-    font-size: .4em;
+    font-size: .9em;
     padding-top: none; 
   }
   h2,h3{
