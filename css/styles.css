@@ -207,7 +207,28 @@ section > img{
 /* Media types go here*/
 /* Tablet */
 @media screen and (max-width: 768px) {
-  
+  .gallery .controls {
+    position: absolute;
+    bottom: -180px;
+    width: 100%;
+    text-align: center;
+  }
+   .gallery .item {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    border-bottom: 4px double rgb(192,38,10);
+    border-top: 4px double rgb(192,38,10);
+  }
+  #logo{
+    width: 30%;
+    height: 25%;
+  }
+  img{
+    width: 100%;
+    height: 100%;
+  }
 nav ul {
     padding: 0;
     margin: 0;
@@ -245,6 +266,28 @@ body > div > section:nth-child(n+7){
 
 /* Mobile */
 @media screen and (max-width: 480px) {
+  .gallery .controls {
+    position: absolute;
+    bottom: -180px;
+    width: 100%;
+    text-align: center;
+  }
+   .gallery .item {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    border-bottom: 4px double rgb(192,38,10);
+    border-top: 4px double rgb(192,38,10);
+  }
+  img{
+    width: 100%;
+    height: 100%;
+  }
+  #logo{
+    width: 50%;
+    height: 25%;
+  }
   nav ul {
     padding: 0;
     margin: 0;
