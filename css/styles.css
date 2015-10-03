@@ -5,16 +5,34 @@ body{
 h1{
 	font-family: 'Nova Square', cursive;
 	color:#0A0924;
+<<<<<<< HEAD
 }
 h2,h3{
 	font-family: 'Quicksand', sans-serif;
 	color: #0E216C ;
+=======
+	text-align: center;
+}
+h2,h3{
+	font-family: 'Quicksand', sans-serif;
+	margin: 0;
+	text-align: center;
+	border-bottom: solid;
+	color: #0E216C ;
+	font-size: 1.25em;
+	max-width: 100%;
+	
+>>>>>>> origin/master
 }
 /*Body Text*/
 p{
 	font-family: 'Ubuntu',sans-serif;
 	color: #C0260A;
 	letter-spacing: 2px;
+<<<<<<< HEAD
+=======
+	text-indent: 12px;
+>>>>>>> origin/master
 }
 /*Baseline Links*/
 a:link,
@@ -22,6 +40,7 @@ a:visited{
 	text-transform: uppercase;
 	text-decoration: none;
 	font-style: italic;
+<<<<<<< HEAD
 }
 
 a:hover{
@@ -32,11 +51,311 @@ h2, h3, p {
 	margin: 0;
 }
 
+=======
+
+}
+a:hover{
+	background: #FF5952;
+}
+div a:hover{
+	background: none;
+}
+/*NAVIGATION*/
+ul {
+  list-style:none;
+  padding-left: 32px;
+  margin: 0;
+  color: #C0260A;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+  background:#C0260A;
+  height: 1.7em;
+  list-style: none;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  font-size: 1.25em;
+  font-style: bold;
+  color: transparent;
+}
+nav a:link, nav a:visited {
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+}
+nav a:hover {
+  color: black;
+  background: white;
+  font-weight: bold;
+  border-bottom: 1px solid white;
+}
+nav li {
+  display: inline;
+  float: left;
+  padding: .625em 0;
+}
+
+nav a{
+  text-decoration: none;
+  font-weight: 800;
+  padding: 20px;
+  color: #93AAFF;
+}
+nav a.selected, 
+nav a:hover,
+nav a:visited{
+	padding-bottom: 0;
+	color:#0E216C;
+}
+>>>>>>> origin/master
 /* Layout for Style Tile*/
 section {
 	margin: 20px 0;
 }
+<<<<<<< HEAD
 /* Show Grid */
 .showgrid {
 	background: url("../img/grid-bg.png") repeat-y;
+=======
+header{
+	background: url("../img/circuit2.png");
+	background-color: transparent;
+}
+footer{
+	text-align: center;
+	border-top: 2px solid #0A0924;
+}
+img {
+  max-width: 100%;
+ }
+header > section >h1,header>section>p{
+	color:white;
+  text-indent: none;
+}
+section > img{
+	border: 3px solid #FF5952;
+	background: none;
+}
+ .gallery .control-button {
+    color: #C0260A;
+    color: rgba(255, 255, 255, 0.4);
+  }
+  
+  .gallery .control-button:hover {
+    color: white;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  /*
+    Theme controls how everything looks in Gallery CSS.
+  */ 
+  .gallery {
+    position: relative;
+  }
+  .gallery .item {
+    height: 600px;
+    overflow: hidden;
+    text-align: center;
+    border-bottom: 4px double rgb(192,38,10);
+    border-top: 4px double rgb(192,38,10);
+
+  }
+  
+  .gallery .controls {
+    position: absolute;
+    bottom: -100px;
+    width: 100%;
+    text-align: center;
+  
+  }
+  .gallery .controls img {
+    border: 3px solid rgb(147,170,255);
+    border-radius: 75px;
+    width: 50px;
+    margin: 0 10px;
+  }
+  .gallery .control-button {
+    display: inline-block;
+    margin: 0 .02em;
+    font-size: 3em;
+    text-align: center;
+    text-decoration: none;
+    transition: color .1s;
+  }
+#logo {
+  -webkit-animation:pulse 1s infinite ease-in-out alternate;
+  -o-animation:pulse 1s infinite ease-in-out alternate;
+  animation: pulse 1s infinite ease-in-out alternate;
+  border: none;
+}
+@-webkit-keyframes pulse {
+  from { transform: scale(0.8); }
+  to { transform: scale(1.2); }
+}
+#alb > p:nth-child(2),#eagles > p:nth-child(2),#warriors > p:nth-child(2){
+	font-weight: 700;
+}
+#personal > ul,#knowlege >ul,#proficient > ul{
+	text-align: left;
+}
+#personal > ul >li,#proficient > ul>li,#knowlege >ul>li{
+	list-style: none;
+}
+#alb > ul,#eagles > ul, #warriors > ul{
+	list-style-type: disc; 
+}
+#mail{
+	text-align: left;
+	width: 211px;
+	padding-left: 34px;
+}
+#phone{
+	text-align: right;
+	width: 413px;
+	padding-right: 20px;
+}
+#phone,#mail{
+	font-size: 1.19em;
+}
+
+#ewu, #sms, #personal, #alb {
+	padding-left: 10px;
+}
+#pattern, #knowledge,#wwcc{
+	padding-right: 15px;
+}
+/* Show Grid */
+.showgrid {
+	background: url("../img/grid-bg.png") repeat-y;
+}
+/* Media types go here*/
+/* Tablet */
+@media screen and (max-width: 768px) {
+  .gallery .controls {
+    position: absolute;
+    bottom: -180px;
+    width: 100%;
+    text-align: center;
+  }
+   .gallery .item {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    border-bottom: 4px double rgb(192,38,10);
+    border-top: 4px double rgb(192,38,10);
+  }
+  #logo{
+    width: 30%;
+    height: 25%;
+  }
+  img{
+    width: 100%;
+    height: 100%;
+  }
+nav ul {
+    padding: 0;
+    margin: 0;
+    height: 1em;
+  }
+h1,h2,h3{
+  font-size: 1.25em;
+}
+
+ #phone,#mail {
+  margin: 0;
+  padding: 0;
+  font-size: .9em;
+  max-width: 100%;
+  text-align: center;
+  }
+
+  nav>ul>li {
+    float: none;
+    font-size: .9em;
+    padding-top: none; 
+  }
+  footer p.grid_6 {
+    width: 100%;
+    margin: 2% 0;
+  }
+body > div > section.grid_2{
+  font-size: .9em;
+  width: 100%;
+}
+body > div > section:nth-child(n+7){
+  width: 49%;
+}
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  .gallery .controls {
+    position: absolute;
+    bottom: -61%;
+    width: 100%;
+    text-align: center;
+  }
+   .gallery .item {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    border-bottom: 4px double rgb(192,38,10);
+    border-top: 4px double rgb(192,38,10);
+  }
+  img{
+    width: 100%;
+    height: 100%;
+  }
+  #logo{
+    width: 30%;
+    height: 25%;
+  }
+  nav ul {
+    padding: 0;
+    margin: 0;
+    height: 1em;
+  }
+  
+  nav.grid_9 {
+    width: 100%;
+  }
+  #phone,#mail {
+  margin: 0;
+  padding: 0;
+  font-size: .65em;
+  max-width: 50%;
+  text-align: center;
+  } 
+    nav>ul>li {
+    float: none;
+    font-size: .9em;
+    padding-top: none; 
+  }
+  h2,h3{
+    font-size: 1em;
+  }
+  p{
+    font-size: .9em;
+  }
+  #main section>section.grid_6,
+  #main >section:nth-child(n+1)>section.grid_4, 
+  body > div > section.grid_3,
+  body > div > section.grid_9,
+  body > div > section:nth-child(n+1),
+  body > div > section.grid_2{
+    width: 100%;
+    float: none;
+  }
+    footer p.grid_6 {
+    width: 100%;
+    margin: 2% 0;
+  }
+
+>>>>>>> origin/master
 }
