@@ -5,12 +5,6 @@ body{
 h1{
 	font-family: 'Nova Square', cursive;
 	color:#0A0924;
-<<<<<<< HEAD
-}
-h2,h3{
-	font-family: 'Quicksand', sans-serif;
-	color: #0E216C ;
-=======
 	text-align: center;
 }
 h2,h3{
@@ -22,17 +16,13 @@ h2,h3{
 	font-size: 1.25em;
 	max-width: 100%;
 	
->>>>>>> origin/master
 }
 /*Body Text*/
 p{
 	font-family: 'Ubuntu',sans-serif;
 	color: #C0260A;
 	letter-spacing: 2px;
-<<<<<<< HEAD
-=======
 	text-indent: 12px;
->>>>>>> origin/master
 }
 /*Baseline Links*/
 a:link,
@@ -40,18 +30,6 @@ a:visited{
 	text-transform: uppercase;
 	text-decoration: none;
 	font-style: italic;
-<<<<<<< HEAD
-}
-
-a:hover{
-	background: #FF5952;
-}
-/* Set Your Own Margin & Padding */
-h2, h3, p {
-	margin: 0;
-}
-
-=======
 
 }
 a:hover{
@@ -111,16 +89,10 @@ nav a:visited{
 	padding-bottom: 0;
 	color:#0E216C;
 }
->>>>>>> origin/master
 /* Layout for Style Tile*/
 section {
 	margin: 20px 0;
 }
-<<<<<<< HEAD
-/* Show Grid */
-.showgrid {
-	background: url("../img/grid-bg.png") repeat-y;
-=======
 header{
 	background: url("../img/circuit2.png");
 	background-color: transparent;
@@ -357,5 +329,4 @@ body > div > section:nth-child(n+7){
     margin: 2% 0;
   }
 
->>>>>>> origin/master
 }
